@@ -1,8 +1,23 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import LoginPage from './pages/auth/LoginPage'
+
+const Placeholder = ({ titulo }) => (
+  <div className="flex items-center justify-center h-64">
+    <p className="text-gray-400 text-lg font-medium">{titulo} — próximamente</p>
+  </div>
+)
+
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-teal-600">
-      <h1 className="text-4xl font-bold text-white">SIGER ✅</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<LoginPage />} />
+
+        
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
