@@ -5,9 +5,10 @@ import morgan from 'morgan'
 import dotenv from 'dotenv'
 
 dotenv.config()
+import './config/db.js'
 
 const app = express()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 // Middlewares globales
 app.use(helmet())
