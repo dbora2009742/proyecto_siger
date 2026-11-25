@@ -9,6 +9,6 @@ export default defineConfig({
   ],
     server: {
     port: 5174,
-    strictPort: true  // Si 5173 está ocupado, lanza error en vez de cambiar puerto
+    strictPort: true  // Si 5174 está ocupado, lanza error en vez de cambiar puerto
   }
 })
