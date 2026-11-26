@@ -36,3 +36,10 @@ app.get('/api/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
+
+import equiposRoutes from './routes/equipos.routes.js'
+import rutasRoutes   from './routes/rutas.routes.js'
+
+// después de las rutas existentes:
+app.use('/api/equipos', equiposRoutes)
+app.use('/api/rutas',   rutasRoutes)
