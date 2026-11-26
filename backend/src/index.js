@@ -8,6 +8,7 @@ import authRoutes from './routes/auth.routes.js';
 import usuariosRoutes from './routes/usuarios.routes.js'
 import zonificacionRoutes from './routes/zonificacion.routes.js'
 import tachosRoutes from './routes/tachos.routes.js'
+import flotaRoutes from './routes/flota.routes.js'
 dotenv.config();
 
 const app = express();
@@ -25,6 +26,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/usuarios', usuariosRoutes)
 app.use('/api/zonificacion', zonificacionRoutes)
 app.use('/api/tachos', tachosRoutes)
+app.use('/api/flota', flotaRoutes)
 app.get('/api/health', (req, res) => {
   res.json({
     ok: true,
