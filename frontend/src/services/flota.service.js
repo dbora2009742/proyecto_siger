@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
+const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3001'
 
 const getHeaders = () => ({
   'Content-Type': 'application/json',
