@@ -324,7 +324,7 @@ export default function MobiliarioPage() {
      RENDER
   ══════════════════════════════════════════════════════════ */
   return (
-    <div className="min-h-screen bg-slate-100 p-6 space-y-6">
+    <div className="min-h-screen bg-slate-100 px-6 pt-2 pb-1.2 space-y-6">
 
       {/* ── Encabezado ── */}
       <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 rounded-2xl px-6 py-5 flex items-center justify-between">

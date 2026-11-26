@@ -5,6 +5,8 @@ import UsuariosPage from './pages/admin/usuarios/UsuariosPage'
 import ZonificacionPage from './pages/admin/catastro/ZonificacionPage'
 import MobiliarioPage from './pages/admin/MobiliarioPage'
 import FlotaPage from './pages/admin/flota/FlotaPage'
+import RutasPage from './pages/admin/rutas/RutasPage'
+
 
 const Placeholder = ({ titulo }) => (
   <div className="flex items-center justify-center h-64">
@@ -25,7 +27,7 @@ function App() {
           <Route path="/zonificacion"  element={<ZonificacionPage />} />
           <Route path="/mobiliario"    element={<MobiliarioPage />} />
           <Route path="/flota"         element={<FlotaPage />} />
-          <Route path="/rutas"         element={<Placeholder titulo="Rutas y Equipos" />} />
+          <Route path="/rutas"         element={<RutasPage />} />
           <Route path="/pesajes"       element={<Placeholder titulo="Pesajes" />} />
           <Route path="/fiscalizacion" element={<Placeholder titulo="Fiscalización" />} />
           <Route path="/reportes"      element={<Placeholder titulo="Reportes" />} />
